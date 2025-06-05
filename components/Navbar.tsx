@@ -14,10 +14,10 @@ const Navbar = () => {
       <nav>
         <Link href="/">
           <Image
-            src="/assets/icons/caplogo2.png"
+            src="/assets/icons/logo1.png"
             alt="Logo"
-            width={55}
-            height={55}
+            width={32}
+            height={32}
           />
           <h1>Capturio</h1>
         </Link>

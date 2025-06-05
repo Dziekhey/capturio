@@ -117,7 +117,7 @@
       }
 
       h1 {
-        @apply text-xl font-black text-blue-100 font-satoshi -tracking-[0.5px];
+        @apply text-xl font-black text-green-100 font-satoshi -tracking-[0.5px];
       }
 
       .description {
@@ -167,7 +167,7 @@
           @apply flex items-center gap-2.5 justify-center;
 
           h1 {
-            @apply text-28 font-black text-blue-100 font-satoshi;
+            @apply text-28 font-black text-green-100 font-satoshi;
           }
         }
 
@@ -307,7 +307,7 @@
       @apply flex items-center justify-between max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 w-full;
 
       a {
-        @apply flex items-center gap-0.5;
+        @apply flex items-center gap-2.5;
 
         h1 {
           @apply text-xl font-black text-green-100 font-satoshi -tracking-[0.1px];
