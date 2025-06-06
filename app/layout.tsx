@@ -9,7 +9,7 @@ const geistKarla = Karla({
 });
 
 export const metadata: Metadata = {
-  title: "Capturio",
+  title: "Reclyst",
   description: "A Screen Sharing App",
   icons: {
     icon: "/assets/icons/logo1.png",
