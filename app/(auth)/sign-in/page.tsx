@@ -2,9 +2,14 @@
 
 import Link from "next/link";
 import Image from "next/image";
-
+import { authClient } from "@/lib/auth-client";
 
 const SignIn = () => {
+  const handleSignIn = async () => {
+    return await authClient.signIn.social({
+      provider: "google",
+    });
+  };
   return (
     <main className="sign-in">
       <aside className="testimonial">
@@ -32,8 +37,9 @@ const SignIn = () => {
               ))}
             </figure>
             <p>
-            Reclyst makes screen recording easy. From quick walkthroughs to
-              full presentations, it&apos;s fast, smooth, and shareable in seconds
+              Reclyst makes screen recording easy. From quick walkthroughs to
+              full presentations, it&apos;s fast, smooth, and shareable in
+              seconds
             </p>
             <article>
               <Image
@@ -45,12 +51,12 @@ const SignIn = () => {
               />
               <div>
                 <h2>Jason Rivera</h2>
-                <p>Product Designer,  NovaByte</p>
+                <p>Product Designer, NovaByte</p>
               </div>
             </article>
           </section>
         </div>
-        <p>© Reclyst {(new Date().getFullYear())}</p>
+        <p>© Reclyst {new Date().getFullYear()}</p>
       </aside>
       <aside className="google-sign-in">
         <section>
@@ -69,11 +75,7 @@ const SignIn = () => {
           </p>
 
           <button
-            // onClick={async () => {
-            //   return await authClient.signIn.social({
-            //     provider: "google",
-            //   });
-            // }}
+          onClick={handleSignIn}
           >
             <Image
               src="/assets/icons/google.svg"

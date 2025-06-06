@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Sandra-s-workspace-rknrhr.eu-west-1.xata.sh/db/jsm_reclyst",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
